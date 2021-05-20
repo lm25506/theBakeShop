@@ -1,0 +1,159 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title> Lucy's Baking Corner</title>
+    <link rel="stylesheet" href="styles.css"
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
+</head>
+<body>
+
+<h2><strong>Lucy's Baking Corner</strong></h2>
+<p>  <h4>  <button onclick="document.getElementById('time').innerHTML=Date()">Click to refresh the time! </button> <h4></p>
+    <p id="time"></p>
+    <p><img src="https://media0.giphy.com/media/26xBKmPkJLYvGV9yE/giphy.gif" alt="Mix"</p>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Cookies')">Cookies</button>
+  <button class="tablinks" onclick="openCity(event, 'Cakes')">Cakes</button>
+  <button class="tablinks" onclick="openCity(event, 'Favorite Baking Equiptment')">Favorite Baking Equiptment</button>
+  <button class="tablinks" onclick="openCity(event, 'Recipe of the Week')">Recipe of the Week</button>
+  <button class="tablinks" onclick="openCity(event, 'About Me')">About Me</button>
+</div>
+
+<div id="Cookies" class="tabcontent">
+  <h1> Cookies: </h1>
+  <p><img src="https://media0.giphy.com/media/hpfInSxkkLdpS/giphy.gif" alt="Cookie"</p>
+  <p> <a href="https://www.biggerbolderbaking.com/easy-sugar-cookie-recipe/" target="_blank"> Sugar Cookies </a> </p>
+  <p> <a href="https://www.biggerbolderbaking.com/best-ever-chocolate-chip-cookies/" target="_blank"> Chocolate Chip Cookies </a> </p>
+  <p> <a href="https://www.biggerbolderbaking.com/peanut-butter-cookies-best-ever/" target="_blank"> Peanut Butter Cookies </a> </p>
+</div>
+
+<div id="Cakes" class="tabcontent">
+  <h3>Cakes:</h3>
+      <p><img src="https://media.giphy.com/media/He4wudo59enf2/giphy.gif" alt="Cake"</p>
+      <p> <a href="https://www.biggerbolderbaking.com/coffee-cake-recipe/" target="_blank"> Classic Coffee Cake </a> </p>
+      <p> <a href="https://www.biggerbolderbaking.com/funfetti-birthday-cake/" target="_blank"> Funfetti Cake </a> </p>
+      <p> <a href="https://sallysbakingaddiction.com/red-velvet-layer-cake-with-cream-cheese-frosting/" target="_blank"> Red Velvet Cake </a> </p>
+</div>
+
+<div id="Favorite Baking Equiptment" class="tabcontent">
+  <h3>Favorite Baking Equiptment</h3>
+    <p><img src="https://66.media.tumblr.com/d77352921ecebc03abe4700799ac94ae/tumblr_nmd0i4jzNS1qa6ftro3_250.gif" alt="frost"</p>
+    <p><a href="https://www.amazon.com/Norpro-Balloon-Whisk-Stainless-Steel/dp/B00005EBH9" target="_blank"> Whisk </a> </p>
+    <p><a href="https://www.homedepot.com/p/Sencor-4-75-Qt-8-Speed-Pastel-Blue-Stand-Mixer-STM42BL-NAB1/206939259?cm_mmc=Shopping%7CG%7CBase%7CHDH%7C29-28_SMALL+ELECTRICS%7CNA%7CPLA%7CMixers-Slicers%7c71700000048833954%7c58700004850322382%7c92700041732069754&gclid=CjwKCAjw04vpBRB3EiwA0IieahY8COtWZ1SrJX0vQCzY3rHhFLuRdym0s2sy8m_-PMjaRgcI7vL2LxoC2NsQAvD_BwE&gclsrc=aw.ds" target="_blank"> Stand Mixer </a> </p>
+    <p><a href="https://www.target.com/p/wilton-46-piece-deluxe-dessert-decorating-set/-/A-15433130?ref=tgt_adv_XS000000&AFID=google_pla_df&fndsrc=tgtao&CPNG=PLA_Kitchen%2BShopping&adgroup=SC_Kitchen&LID=700000001170770pgs&network=g&device=c&location=9026803&ds_rl=1246978&ds_rl=1247068&ds_rl=1246978&gclid=CjwKCAjw04vpBRB3EiwA0IieavADBnDGiA6ATB50cMEo1PC9aujKo_ziQ6pnPECaI80nhQ_n3lK9RRoCIe0QAvD_BwE&gclsrc=aw.ds" target="_blank"> Wilton Decorating Set </a> </p>
+</div>
+
+</div>
+
+<div id="Recipe of the Week" class="tabcontent">
+  <h3>Recipe of the Week</h3>
+  <p> <img src="https://www.sweetandsavorybyshinee.com/wp-content/uploads/2016/12/Chocolate-Macarons-2.jpg" target="_blank"> <p>
+  <p><h1>Chocolate Macarons</h1></p>
+  <p>Ingredients:</p>
+    <p>For macarons shells: </p>
+      <p><h5>1 cup (100g) almond flour </h5></p>
+      <p><h5>3/4 cup (100g) powdered sugar </h5></p>
+      <p><h5>2 tablespoons (10g) natural cocoa powder</h5> </p>
+      <p><h5>2 large egg whites (75g), at room temperature</h5> </p>
+      <p><h5> 1/4 teaspoon cream of tartar</h5> </p>
+      <p><h5> 1/4 cup (50g) sugar </h5></p>
+      <p><h5>1 teaspoon coarse sea salt, optional </h5></p>
+    <p>For chocolate ganache filling: </p>
+      <p><h5> 1/3 cup (60g) semi-sweet chocolate chips </h5></p>
+      <p><h5>2 tablespoons Nutella</h5> </p>
+      <p><h5>3 tablespoons heavy cream</h5> </p>
+      <p><h5>1 tablespoon Kahlua, optional</h5> </p>
+    <p> Directions </p>
+    <p><h5>In a medium bowl, sift together almond flour, powdered sugar and cocoa powder twice. Set aside.</p>
+<p>In a large mixing bowl with whisk attachment, beat the egg whites on medium speed until foamy. Add cream of tartar and continue to beat. Slowly add sugar one tablespoon at a time. Increase the speed to medium high and beat until hard peaks form.</p>
+<p>Sift the almond flour mixture over the whipped egg whites. Gently fold the mixture running the spatula clockwise from the bottom, up around the sides and cut the batter in half. The batter will look very thick at first, but it will get thinner as you fold. Be careful not to over mix it though. Every so often test the batter to see if it reached the right consistency. To test the batter, drop a small amount of the batter and count to ten. If the edges of the ribbon are dissolved within ten <p>seconds, then the batter is ready. I repeat, do NOT mix again. If you still see edges, fold the batter couple more times and test again. This step is so crucial, so please make sure to test often to ensure not to over mix the batter.</p>
+<p>Transfer the batter into a pastry bag with a round tip. (I used Wilton A1 tip)</p>
+<p>Pipe out 1.5-inch rounds about an inch apart on two baking sheets lined with parchment paper. You should get about 42 shells. Tap the baking sheets firmly on the counter a few times to get rid of any air bubbles. If you don’t release the air bubbles, they will expand during baking and crack the beautiful macarons shells.</p>
+<p>Let the macarons rest and dry for 15-30 minutes. On a humid day, it might take an hour or so. To see if it is ready to be baked, lightly touch it. If the batter doesn’t stick to your finger, then it is ready. Sprinkle a little bit of sea salt on each macaron right before baking. Preheat the oven to 300°F (150°C).</p>
+<p>Bake the macarons for 18-20 minutes. To check the doneness, remove one macaron. If the bottom does not stick, they are done.
+<p>Transfer to wire rack to cool for 15 minutes, and then remove from the baking sheets.</p>
+<p>While macarons are cooling, prepare the ganache filling. Heat the heavy cream in the microwave for a minute. In a medium bowl, put the chocolate chips and pour hot cream over the chocolate. Let it stand for a minute or two and then stir until smooth. Stir in Nutella and Kahlua for flavor. Cool the ganache in the fridge to thicken.</p>
+<p>Transfer the ganache filling into a pastry bag and fill the macarons.</p>
+<p>Store the filled macarons in airtight container in the fridge for up to 5 days. You can also freeze the filled macarons in airtight container for up to 5 months.</h5></p>
+
+
+
+</div>
+
+</div>
+
+<div id="About Me" class="tabcontent">
+  <h3>About Me</h3>
+    <p><img src="picture.jpg" alt="picture"</p>
+  Hi My name is Lucy Ma! I was born in TN, but currently reside in loud and proud Houston, TX.
+  I started baking when I was around 8 years old and have loved it ever since.
+  Some of my favorite things to do other than baking are playing cello, baking and exploring national parks all over the world.
+  I am currently a rising junior at CLHS with a plan of eventually pursuing law.
+  <h5> <a href="http://vladgotlib.com/circular/" target="_blank" > Click for a Surprise! </a> </h3> (my high score is 59,188! Can you beat it?)</h5>
+
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+
+
+  </body>
+  </html>
